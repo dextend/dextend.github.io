@@ -1,0 +1,120 @@
+body {
+    margin: 50px;
+	font-family: 'VT323' ;
+	background-color: #333;
+    width: 1200px;
+	float: middle;
+    /* height: 100px; */
+	color: #E6E6E6;
+    /* -webkit-animation-name: rainbow;
+    -webkit-animation-duration: 10s;
+    animation-name: rainbow;
+    animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite; */
+}
+
+a:link, a:visited { 
+    text-decoration: none;
+    cursor: auto;
+	color: #E6E6E6;
+}
+
+a:link:active, a:visited:active { 
+	color: #E6E6E6;
+}
+
+#content {
+	text-align: center;
+/*	margin-left: -500px;
+	position: absolute;
+	width: 1000px;
+	left: 50%;
+	top: 30%; */
+	color: #E6E6E6;
+}
+
+#footer {
+	text-align: center;
+	margin-left: -500px;
+	position: absolute;
+	width: 1000px;
+	left: 50%;
+	top: 45%;
+	color: #E6E6E6;
+	float: bottom;
+}
+
+#blink {
+	-webkit-animation-name: blink;
+    -webkit-animation-duration: 0.5s;
+    animation-name: blink;
+    animation-duration: 0.5s;
+	-webkit-animation-iteration-count: infinite;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes blink {
+	50%   {opacity: 1.0;}
+	50%   {opacity: 0;}
+}
+
+/* Standard syntax */
+@keyframes blink {
+	50%   {opacity: 1.0;}
+	50%   {opacity: 0;}
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow {
+    25%   {color: red;}
+    25%  {color: yellow;}
+    25%  {color: blue;}
+    25% {color: green;}
+	25%  {color: blue;}
+	25%  {color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes rainbow {
+    25%   {color: red;}
+    25%  {color: yellow;}
+    25%  {color: blue;}
+    25% {color: green;}
+	25%  {color: blue;}
+	25%  {color: yellow;}
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	color: #E6E6E6;
+}
+
+li {
+    float: left;
+	color: #5FB404;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	color: #E6E6E6;
+}
+
+/* Change the link color to #111 (black) on hover
+li a:hover {
+   background-color: #111;
+} */
+
+.active {
+	
+}
