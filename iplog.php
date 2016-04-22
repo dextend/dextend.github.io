@@ -1,5 +1,3 @@
-<?php
-
 function logIP()
 {
      $ipLog="log.txt"; // Your logfiles name here (.txt or .html extensions ok)
@@ -25,6 +23,3 @@ function logIP()
 }
 // Place the below function call wherever you want the script to fire.
 logIp();
-
-
-?>
