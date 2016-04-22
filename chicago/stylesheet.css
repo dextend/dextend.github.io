@@ -1,0 +1,139 @@
+body {
+    margin: 0px;
+	font-family: 'Quicksand', bold;
+}
+
+a:link, a:visited { 
+    color: #000;
+    text-decoration: none;
+    cursor: auto;
+}
+
+a:link:active, a:visited:active { 
+    color: #000;
+}
+
+#content {
+	text-align: center;
+	font-family: 'Quicksand', bold;
+}
+
+img {
+	border-radius: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#footer {
+	background-color: #333;
+	text-align: center;
+	float: bottom;
+	margin: 0;
+    padding: 1px;
+}
+
+#headerimg {
+	padding: 50px;
+	background: url(./files/background.jpg);
+	background-size: 100% 700%;
+}
+
+#footerimg {
+	padding: 50px;
+	background: url(./files/background.jpg);
+	background-size: 100% 700%;
+}
+
+#credit {
+	font-style: italic;
+	text-align: center;
+	opacity: 0.25;
+}
+
+#left {
+	position: absolute; left: 50px;
+}
+
+#right {
+	position: absolute; right: 50px;
+}
+
+#placetable {
+	/* margin-top: -200px; */
+	/* position: absolute; */
+	width: 500px;
+	/* left: 5%; */
+	/* top: 50%; */
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:yellow;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:red;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:yellow;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:red;}
+}
+
+button {
+    background-color: #04B431; /* Red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	font-family: VT323;
+}

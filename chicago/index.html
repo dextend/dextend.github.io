@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+	<title>Travel to Chicago</title>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	<link rel="icon" href="./files/icon.ico">
+	
+</head>
+
+<body id="bodyindex">
+<b>
+    <ul id="header">
+		<div id="headerimg"><!-- <p id="credit">Background provided by <a href="http://www.premierwall.xyz">premierwall.xyz</a></p> --></div>
+		<li><a class="active" href="index.html">Home</a></li>
+		<li><a href="place.html">Places to Visit</a></li>
+		<ul style="float:right;list-style-type:none;">
+			<li><a href="history.html">History</a></li>
+			<li><a href="hotels.html">Hotels</a></li>
+		</ul>
+	</ul>
+	
+	<div id="content">
+	
+		<h1>Chicago</h1>
+		
+		<hr width="450" />
+		
+		<div id="left">
+		<p>Come to Chicago!</p>
+		<img style="width: 320px; height: 200px;" img src=".\files\home1.jpg">
+		<p>It's an amazing place!</p>
+		</div>
+		
+		<div id="right">
+		<p>Wonderful views!</p>
+		<img style="width: 320px; height: 200px;" img src=".\files\home2.jpg">
+		<p>Wonderful fun!</p>
+		</div>
+		
+		<p id="credit">Map provided by Google Maps</p>
+		<center id="map">
+		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://www.proxysitereviews.com/">proxy sites</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(41.877969809845,-87.62966945396727),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.877969809845,-87.62966945396727)});infowindow = new google.maps.InfoWindow({content:'<strong>Chicago</strong><br>Chicago<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+		</center>
+		
+		<br>
+		<hr width="450" />
+		
+		<p>Chicago is the third most populous city in the United States. With over 2.7 million residents, it is the most populous city in the state of Illinois and the Midwest. The Chicago metropolitan area, often referred to as Chicagoland, has nearly 10 million people and is the third-largest in the U.S. Chicago is the seat of Cook County.</p>
+		
+		<p id="credit">Information provided by <a href="http://www.wikipedia.org/">wikipedia.org</a></p>
+		
+		<button type="button" onclick="myFunction()">ACTIVATE TERMINAL</button>
+		
+			<script>
+			function myFunction() {
+			document.getElementById('bodyindex').style.font = "bold 20px VT323,VT323";
+			document.getElementById('bodyindex').style.color = "green";
+			document.getElementById('bodyindex').style.background = "black";
+			document.getElementById('content').style.font = "bold 20px VT323,VT323";
+			document.getElementById('headerimg').style.background = "black";
+			document.getElementById('footerimg').style.background = "black";
+			document.getElementById('footer').style.background = "black";
+			document.getElementById('header').style.background = "black";
+			document.getElementById('header').style.color = "green";
+			document.getElementById('map').style.visibility = "hidden";
+			document.getElementById('left').style.visibility = "hidden";
+			document.getElementById('right').style.visibility = "hidden";
+			}
+			</script>
+		
+	</div>
+	
+	<br>
+	<br>
+	
+	<div id="footer">
+	<p>Website created by yours truly, Will Hatter. // Created for Educational Use.</p>
+	<div id="footerimg"><!-- <p id="credit">Background provided by <a href="http://www.premierwall.xyz">premierwall.xyz</a></p> --></div>
+	</div>
+</b>
+</body>
+
+</html>
