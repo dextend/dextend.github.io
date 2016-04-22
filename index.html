@@ -6,10 +6,7 @@
 	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 	<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="favicon.ico" />
-</head>
 
-<body>
-	
 	<?php
 	$logfile= 'log.txt';
 	$IP = $_SERVER['REMOTE_ADDR'];
@@ -21,6 +18,10 @@
 	fwrite($fp, $logdetails, strlen($logdetails));
 	fclose($fp);
 	?>
+
+</head>
+
+<body>
 	
 <b>
 	<div id="content">
