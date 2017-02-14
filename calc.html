@@ -1,0 +1,148 @@
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<style>
+body {
+font-family: 'Dosis', sans-serif;
+}
+</style>
+</head>
+<body dir="ltr">
+<script type="text/javascript"><!--
+
+function isLying() {
+  getValues()
+
+  // Check for lies
+  today = new Date() // Helps to account for future progress
+  thisMonth = ((today.getFullYear()*12) + today.getMonth())
+  monthRobloxCreated = ((2006 * 12) + 12)
+  baseMonth = ((2011 * 12) + 11)
+
+  if( (thisMonth - months) < monthRobloxCreated) return true // If joined before Roblox was Created
+  if(friends > 21000000 + ((thisMonth - baseMonth)*500000) ) return true
+  if(posts > 150000) return true
+
+  return false
+}
+
+function getValues() {
+  // Get the values from the form
+  months = document.forms[0].months.value
+  profs = document.forms[0].profs.value
+  friends = document.forms[0].friends.value
+  posts = document.forms[0].posts.value
+
+  // Remove all commas from the values
+  months = months.replace(/,/g, "")
+  profs = profs.replace(/,/g, "")
+  friends = friends.replace(/,/g, "")
+  posts = posts.replace(/,/g, "")
+
+  //Convert the Values to Numbers
+  months = months * 1
+  profs = profs * 1
+  friends = friends * 1
+  posts = posts * 1
+}
+
+function calculate() {
+  getValues()
+
+  // Get Levels
+  time = 15 * ((-1/((1*months)+0.4)+1))
+  prof = 15 * ((-1/((profs/10000)+1)+1))
+  pop = 10 * ((-1/((friends/100)+1)+1))
+  forum = 45 * ((-1/((posts/75)+1)+1))
+
+  document.forms[0].result.value = Math.round(time + prof + pop + forum) + 3
+  if(document.forms[0].result.value > 99) document.forms[0].result.value = 99
+  if(document.forms[0].result.value < 0) document.forms[0].result.value = 0
+
+  result = document.forms[0].result.value
+
+  // Get Rank
+  document.forms[0].rank.value = "n00b"
+  if(result > 10) document.forms[0].rank.value = "n1/2b"
+  if(result > 20) document.forms[0].rank.value = "Average"
+  if(result > 30) document.forms[0].rank.value = "Good"
+  if(result > 40) document.forms[0].rank.value = "Greater"
+  if(result > 50) document.forms[0].rank.value = "Dope!"
+  if(result > 60) document.forms[0].rank.value = "Valuable!"
+  if(result > 70) document.forms[0].rank.value = "0m3g4!"
+  if(result > 70) document.forms[0].rank.value = "God"
+  if(result > 90) document.forms[0].rank.value = "2016er"
+  if(result == 99) document.forms[0].rank.value = "users/1"
+
+  // Get Individual Levels
+  document.forms[1].pop.value = Math.round((pop*10))
+  if(document.forms[1].pop.value > 99) document.forms[1].pop.value = 99
+
+  document.forms[1].fame.value = Math.round((prof*6.66666666))
+  if(document.forms[1].fame.value > 99) document.forms[1].fame.value = 99
+
+  document.forms[1].forum.value = Math.round((forum*20))
+  if(document.forms[1].forum.value > 99) document.forms[1].forum.value = 99
+}
+//--> 
+</script>
+<center>
+<div class="main-container" style="padding-top: 10%;"> 
+  <div class="shadow-container"> 
+  <div class="shadow"> 
+  <div class="content"> 
+    <div class="data">  
+      <form action="" name="calc"> 
+      <table class="table table-striped" style="text-align: center; width: 500px;"> 
+        <tbody> 
+		<h1>BLOX City Level Calculator</h1>
+          <tr> 
+            <td>Months Played</td> 
+            <td><input name="months" class="form-control"></td> 
+          </tr> 
+          <tr> 
+            <td>Profile Views</td> 
+            <td><input name="profs" class="form-control"></td> 
+          </tr> 
+          <tr> 
+            <td>Amount of Friends</td> 
+            <td><input name="friends" class="form-control"></td> 
+          </tr> 
+          <tr> 
+            <td>Forum Posts</td> 
+            <td><input name="posts" class="form-control"></td> 
+          </tr> 
+          <tr> 
+            <td><input name="reset" onclick="resetForms();" type="button" value="    Reset    " class="btn btn-default"></td> 
+            <td><input name="calculat" onclick="calculate();" type="button" value="  Calculate  " class="btn btn-default"></td> 
+          </tr> 
+          <tr> 
+            <td>Level </td> 
+            <td><input name="result" readonly="readonly" class="form-control"></td> 
+          </tr> 
+          <tr> 
+            <td>Ranking </td> 
+            <td><input name="rank" readonly="readonly" class="form-control"></td> 
+          </tr> 
+          <tr> 
+            <td colspan="2"><input onclick="window.open(&#39;https://www.bloxcity.com/account/settings/&#39;); " type="button" value="     Add To Profile     " class="btn btn-default"></td> 
+          </tr> 
+        </tbody> 
+      </table> 
+      </form> 
+    </div> 
+  </div> 
+  </div> 
+  </div> 
+</div>
+</center>
+</body>
+</html>
